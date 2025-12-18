@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satori - Premium Georgian restaurant in Kutaisi. Experience authentic Georgian cuisine.">
+    <title>Satori | Premium Georgian Restaurant</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Satori</a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-location fade-up">Kutaisi, Georgia</span>
+            <h1 class="hero-title fade-up delay-1">Satori</h1>
+            <p class="hero-tagline fade-up delay-2">Where Tradition Meets Elegance</p>
+            <p class="hero-description fade-up delay-3">
+                Experience authentic Georgian cuisine crafted with passion, served with warmth, 
+                and remembered forever.
+            </p>
+            <div class="hero-buttons fade-up delay-4">
+                <a href="#contact" class="btn btn-primary">Reserve a Table</a>
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1000&auto=format&fit=crop" alt="Satori restaurant interior">
+                    </div>
+                    <div class="about-image-accent"></div>
+                </div>
+                <div class="about-content reveal-right">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">
+                        A Journey Through<br>
+                        <span class="text-accent italic">Georgian Flavors</span>
+                    </h2>
+                    <div class="divider"></div>
+                    <p class="about-text">
+                        Nestled in the heart of Kutaisi, Satori was born from a deep love for 
+                        Georgian culinary traditions. Our name, meaning "sudden enlightenment," reflects our belief that great 
+                        food can transform an ordinary moment into something extraordinary.
+                    </p>
+                    <p class="about-text">
+                        Every dish we serve tells a story—of ancient recipes passed down through 
+                        generations, of fresh ingredients sourced from local farmers, and of our 
+                        unwavering commitment to authentic flavors.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Dishes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Culinary Excellence</span>
+                <h2 class="section-title">Our <span class="text-accent italic">Menu</span></h2>
+                <div class="divider center"></div>
+                <p class="section-description">
+                    A curated selection of traditional Georgian dishes, prepared with 
+                    locally sourced ingredients and time-honored techniques.
+                </p>
+            </div>
+            
+            <div class="menu-tabs reveal">
+                <button class="menu-tab active" data-category="starters">Starters</button>
+                <button class="menu-tab" data-category="mains">Main Courses</button>
+                <button class="menu-tab" data-category="drinks">Wines & Drinks</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+            </div>
+            
+            <div class="menu-layout-wrapper">
+                <div class="menu-visual reveal-left">
+                    <div class="menu-image-frame">
+                        <img id="menuImage" src="images/menu.jpg" alt="Featured Menu Item">
+                    </div>
+                </div>
+
+                <div class="menu-content reveal-right">
+                    <div class="menu-category active" id="starters">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Pkhali Trio</h3>
+                                    <p class="menu-item-desc">Spinach, beet, and walnut spreads</p>
+                                </div>
+                                <span class="menu-item-price">₾18</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Badrijani</h3>
+                                    <p class="menu-item-desc">Eggplant rolls with walnut paste</p>
+                                </div>
+                                <span class="menu-item-price">₾16</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Lobio</h3>
+                                    <p class="menu-item-desc">Traditional spiced kidney beans</p>
+                                </div>
+                                <span class="menu-item-price">₾14</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Jonjoli Salad</h3>
+                                    <p class="menu-item-desc">Pickled sprouts with herbs</p>
+                                </div>
+                                <span class="menu-item-price">₾12</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" id="mains">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Adjarian Khachapuri</h3>
+                                    <p class="menu-item-desc">Boat-shaped cheese bread with egg</p>
+                                </div>
+                                <span class="menu-item-price">₾28</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Mtsvadi</h3>
+                                    <p class="menu-item-desc">Grilled pork skewers with tkemali</p>
+                                </div>
+                                <span class="menu-item-price">₾32</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Chakhokhbili</h3>
+                                    <p class="menu-item-desc">Braised chicken in tomato herb sauce</p>
+                                </div>
+                                <span class="menu-item-price">₾30</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" id="drinks">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Saperavi Reserve</h3>
+                                    <p class="menu-item-desc">Dry red wine, aged in qvevri</p>
+                                </div>
+                                <span class="menu-item-price">₾45</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Rkatsiteli Amber</h3>
+                                    <p class="menu-item-desc">Traditional amber wine</p>
+                                </div>
+                                <span class="menu-item-price">₾40</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Chacha</h3>
+                                    <p class="menu-item-desc">Georgian grape brandy</p>
+                                </div>
+                                <span class="menu-item-price">₾15</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" id="desserts">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Churchkhela</h3>
+                                    <p class="menu-item-desc">Grape juice and walnut candy</p>
+                                </div>
+                                <span class="menu-item-price">₾10</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-name">Pelamushi</h3>
+                                    <p class="menu-item-desc">Grape pudding with walnuts</p>
+                                </div>
+                                <span class="menu-item-price">₾12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="menu-note">* Seasonal ingredients may affect availability. Ask your server for today's specials.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Visual Journey</span>
+                <h2 class="section-title">Our <span class="text-accent italic">Gallery</span></h2>
+                <div class="divider center"></div>
+            </div>
+            
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=1000&auto=format&fit=crop" alt="Georgian Khachapuri">
+                    <div class="gallery-overlay">
+                        <span>Adjarian Khachapuri</span>
+                    </div>
+                </div>
+                <div class="gallery-item span-2">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop" alt="Interior">
+                    <div class="gallery-overlay">
+                        <span>Atmosphere</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?q=80&w=1000&auto=format&fit=crop" alt="Mtsvadi">
+                    <div class="gallery-overlay">
+                        <span>Mtsvadi</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/images.webp" alt="Khinkali">
+                    <div class="gallery-overlay">
+                        <span>Khinkali</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/prive.jpg" alt="Intimate dining">
+                    <div class="gallery-overlay">
+                        <span>Private Dining</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/wine-dzveli.jpg" alt="Wine">
+                    <div class="gallery-overlay">
+                        <span>Qvevri Wine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Guest Reviews</span>
+                <h2 class="section-title">What Our <span class="text-accent italic">Guests Say</span></h2>
+                <div class="divider center"></div>
+            </div>
+            
+            <div class="testimonials-grid reveal">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“</div>
+                    <p class="testimonial-text">An absolutely unforgettable dining experience! The Adjarian Khachapuri was the best I've ever had.</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Maria">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Maria K.</h4>
+                            <span>Tbilisi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“</div>
+                    <p class="testimonial-text">The atmosphere is magical, the staff incredibly welcoming, and the food... oh, the food! A true gem.</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="James">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>James T.</h4>
+                            <span>London</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“</div>
+                    <p class="testimonial-text">We celebrated our anniversary here. The private dining experience exceeded all expectations.</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Elena">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Elena G.</h4>
+                            <span>Batumi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt events-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Celebrations</span>
+                <h2 class="section-title">Special <span class="text-accent italic">Events</span></h2>
+                <div class="divider center"></div>
+            </div>
+            
+            <div class="events-grid reveal">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&h=400&fit=crop" alt="Wine Tasting">
+                    </div>
+                    <div class="event-content">
+                        <h3>Wine Tasting</h3>
+                        <p>Explore Georgia's 8,000-year winemaking tradition.</p>
+                        <a href="#contact" class="event-link">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop" alt="Private Dining">
+                    </div>
+                    <div class="event-content">
+                        <h3>Private Dining</h3>
+                        <p>Exclusive dining for up to 20 guests.</p>
+                        <a href="#contact" class="event-link">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Wedding">
+                    </div>
+                    <div class="event-content">
+                        <h3>Weddings</h3>
+                        <p>Magical memories with traditional Georgian supra.</p>
+                        <a href="#contact" class="event-link">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=400&fit=crop" alt="Corporate">
+                    </div>
+                    <div class="event-content">
+                        <h3>Corporate</h3>
+                        <p>Host impressive business dinners.</p>
+                        <a href="#contact" class="event-link">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reservation-section">
+        <div class="reservation-bg" style="background-image: url('https://images.unsplash.com/photo-1600336153113-d62c9970c44d?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="reservation-overlay"></div> <div class="container">
+            <div class="reservation-content reveal">
+                <span class="section-label">Join Us</span>
+                <h2 class="section-title">Make a <span class="text-accent italic">Reservation</span></h2>
+                <p class="section-description">
+                    Whether it's an intimate dinner for two or a celebration with family and friends, 
+                    we'll make your experience unforgettable.
+                </p>
+                <div class="reservation-buttons">
+                    <a href="tel:+995555123456" class="btn btn-primary">Call Now</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section instagram-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">@satori.kutaisi</span>
+                <h2 class="section-title">Follow Us on <span class="text-accent italic">Instagram</span></h2>
+                <div class="divider center"></div>
+            </div>
+            
+            <div class="instagram-grid reveal">
+                <a href="#" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Food">
+                    <div class="instagram-overlay"><span>❤</span></div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=400&fit=crop" alt="Interior">
+                    <div class="instagram-overlay"><span>❤</span></div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="images/wine.jpg" alt="Wine">
+                    <div class="instagram-overlay"><span>❤</span></div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=400&fit=crop" alt="Meat">
+                    <div class="instagram-overlay"><span>❤</span></div>
+                </a>
+                <a href="#" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop" alt="Dessert">
+                    <div class="instagram-overlay"><span>❤</span></div>
+                </a>
+                <a href="#" class="instagram-item instagram-cta">
+                    <div class="instagram-follow">
+                        <span>Follow Us</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Find Us</span>
+                <h2 class="section-title">Location & <span class="text-accent italic">Contact</span></h2>
+                <div class="divider center"></div>
+            </div>
+            
+            <div class="contact-modern-grid">
+                <div class="contact-details-card reveal-left">
+                    <div class="contact-header">
+                        <h3>Get in Touch</h3>
+                        <p>We are looking forward to hosting you.</p>
+                    </div>
+                    
+                    <div class="contact-list">
+                        <div class="contact-row">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>15 Rustaveli Street, Kutaisi</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Reservations</h4>
+                                <p><a href="tel:+995555123456" class="link-hover">+995 555 123 456</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Mon – Fri: 12:00 PM – 11:00 PM</p>
+                                <p>Sat – Sun: 11:00 AM – 12:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map-wrapper reveal-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.831514330922!2d42.7001!3d42.2679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE2JzA0LjQiTiA0MsKwNDInMDAuNCJF!5e0!3m2!1sen!2sge!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Satori Restaurant Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#home" class="footer-logo">Satori</a>
+                    <p class="footer-desc">Authentic Georgian cuisine in the heart of Kutaisi. Crafted with passion, served with love.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Discover</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li>15 Rustaveli Street</li>
+                        <li>Kutaisi, Georgia</li>
+                        <li>+995 555 123 456</li>
+                        <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="573e3931381724362338253e7a3c2223363e243e793032">[email&#160;protected]</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Stay Connected</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Satori Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
